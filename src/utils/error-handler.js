@@ -3,7 +3,7 @@ const { statusCodes } = require('http-status-codes');
 class AppErrors extends Error {
     constructor(
         name = 'AppError',
-        message = 'Something went wrong',
+        message = 'Something went wrong in the application layer',
         explanation = 'Something went wrong',
         statusCode = statusCodes.INTERNAL_SERVER_ERROR,
     ) {
